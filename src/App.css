@@ -1,38 +1,73 @@
 .App {
-  text-align: center;
+  font-size: 16px;
+  padding: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header label {
+  display: block;
+  font-size: 24px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 8px;
+  justify-content: space-between
+}
+
+input {
+  font-size: 24px;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.App-add-task-btn {
+  font-size: 24px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li span {
+  flex: 1;
+}
+
+button.task-toggle {
+  appearance: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #999;
+  width: 32px;
+  height: 32px;
+}
+
+button.text-button {
+  appearance: none;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: underline;
+  border: 0 none;
+  background: transparent;
 }
